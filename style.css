@@ -7,6 +7,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Comfortaa", cursive;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -111,6 +112,96 @@ h1 {
   opacity: 0.7;
 }
 
+.texto-amigos {
+  width: 100%;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  color: #128596;
+  font-size: 2rem;
+}
+
+.linha {
+  background-color: #698996;
+  width: 140px;
+  height: 4px;
+  position: relative;
+  left: 125px;
+}
+
+.caixa-personagens {
+  width: 100%;
+}
+
+.box-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fig-person {
+  background-color: #128596;
+  width: 400px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.information {
+  position: absolute;
+  top: -200px;
+  width: 100%;
+  height: 200px;
+  opacity: 0.9;
+  background-color: #bf7a59;
+  border-radius: 0px 0px 50px 50px;
+  padding: 30px;
+  transition: 1s all;
+}
+
+.fig-person:hover .information {
+  top: 0px;
+}
+
+.information h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.information p {
+  color: white;
+}
+
+.lula {
+  width: 300px;
+  height: 400px;
+}
+
+.patrick {
+  width: 250px;
+  height: 350px;
+}
+
+.person {
+  text-align: center;
+}
+
+button {
+  width: 150px;
+  padding: 15px;
+  background-color: #bf7a59;
+  color: white;
+  position: relative;
+  bottom: 25px;
+  border: none;
+  border-radius: 5px;
+}
+
 /* Aqui começa o @media */
 @media (max-width: 1000px) {
   .header-ul {
@@ -172,6 +263,16 @@ h1 {
 
   .personagens {
     padding-left: 0rem;
+  }
+}
+
+@media (max-width: 478px) {
+  .texto-amigos {
+    font-size: 1.5rem;
+  }
+  .linha {
+    width: 110px;
+    left: 93px;
   }
 }
 
